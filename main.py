@@ -99,7 +99,7 @@ def generate_ai_reply(text, star, skill_pack, is_update=False):
     3.直接输出内容。
     4.如果内容过多，请优先保留核心解决方案，删掉客套话。
     5.回复好评不要过于模板同质化，可以适当增加一些个性化的内容。
-    6.用户遇到问题就要让用户去support@fantachat.ai反馈，这很重要！
+    6.用户遇到问题就要让用户去support@rosychat.ai反馈，这很重要！
     """
     content = call_ai(prompt, temperature=0.3)
     return smart_truncate(content) if content else None
