@@ -1,0 +1,27 @@
+# 虚拟环境
+venv/
+*.env
+.env
+
+# 谷歌服务账号密钥
+*.json
+gp/*.json
+
+# Python 缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# PyCharm 配置文件
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 日志文件
+*.log
+logs/
+
+# 压缩包
+*.zip
