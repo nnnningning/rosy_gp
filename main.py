@@ -108,7 +108,7 @@ def generate_ai_reply(text, star, skill_pack, is_update=False):
 def generate_pm_report(data_list):
     if not data_list: return "今日无新增回复记录。"
     reviews_context = "\n".join([f"[{d['star']}星] 用户: {d['text'][:30]} | AI: {d['reply'][:30]}" for d in data_list[:30]])
-    prompt = f"你是一名 App PM。根据今日数据生成报告：\n{reviews_context}\n要求：总结主要问题，审计AI质量，给出1条产品建议。使用 Emoji，Markdown 格式。"
+    prompt = f"你是一名 App PM。根据今日数据生成报告：\n{reviews_context}\n要求：总结主要问题，给出产品建议。使用 Emoji，Markdown 格式。"
     return call_ai(prompt, temperature=0.5) or "❌ 报告生成失败"
 
 # 6. 推送：飞书发送
