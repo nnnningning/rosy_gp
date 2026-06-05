@@ -10,7 +10,7 @@ from googleapiclient.discovery import build
 PACKAGE_NAME = os.environ.get('PACKAGE_NAME')
 FEISHU_WEBHOOK = os.environ.get('FEISHU_WEBHOOK_URL')
 AI_KEY = os.environ.get('AI_REPLY_KEY')
-AI_URL = "https://api.deepseek.com/chat/completions"
+AI_URL = "https://openrouter.ai/api/v1/chat/completions"
 GEMINI_MODEL = "deepseek/deepseek-v4-pro"
 
 # 1. 鉴权：连接 Google Play
