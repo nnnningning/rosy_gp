@@ -12,7 +12,7 @@ FEISHU_WEBHOOK = os.environ.get('FEISHU_WEBHOOK_URL')
 AI_KEY = os.environ.get('AI_REPLY_KEY')
 AI_URL = "https://openrouter.ai/api/v1/chat/completions"
 GEMINI_MODEL = "deepseek/deepseek-v4-pro"
-
+# GEMINI_MODEL = "google/gemini-3-flash-preview"
 # 1. 鉴权：连接 Google Play
 def get_service():
     key_content = os.environ.get('GP_JSON_KEY')
