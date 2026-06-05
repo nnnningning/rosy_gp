@@ -9,10 +9,10 @@ from googleapiclient.discovery import build
 # ================= 配置区 =================
 PACKAGE_NAME = os.environ.get('PACKAGE_NAME')
 FEISHU_WEBHOOK = os.environ.get('FEISHU_WEBHOOK_URL')
-AI_KEY = "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"
+AI_KEY = os.environ.get('AI_REPLY_KEY')
 AI_URL = "https://openrouter.ai/api/v1/chat/completions"
-GEMINI_MODEL = "deepseek/deepseek-v4-pro"
-# GEMINI_MODEL = "google/gemini-3-flash-preview"
+GEMINI_MODEL = "google/gemini-3-flash-preview"
+
 # 1. 鉴权：连接 Google Play
 def get_service():
     key_content = os.environ.get('GP_JSON_KEY')
